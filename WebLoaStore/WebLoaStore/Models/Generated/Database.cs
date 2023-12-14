@@ -141,6 +141,8 @@ namespace ShopLoaStoreConnection
 
 
 
+	[PrimaryKey("MaLoaiSanPham", AutoIncrement=false)]
+
 
 	[ExplicitColumns]
 
@@ -156,6 +158,12 @@ namespace ShopLoaStoreConnection
 
 
 		[Column] public string TenLoaiSanPham { get; set; }
+
+
+
+
+
+		[Column] public string TinhTrang { get; set; }
 
 
 
@@ -182,6 +190,12 @@ namespace ShopLoaStoreConnection
 
 
 		[Column] public string TenNhaSanXuat { get; set; }
+
+
+
+
+
+		[Column] public string TinhTrang { get; set; }
 
 
 
@@ -283,11 +297,15 @@ namespace ShopLoaStoreConnection
 
 		[Column] public string TinhTrang { get; set; }
 
-        internal object ToPageList()
-        {
-            throw new NotImplementedException();
-        }
-    }
+
+
+
+
+		[Column] public string GhiChu { get; set; }
+
+
+
+	}
 
     
 
